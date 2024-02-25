@@ -23,7 +23,7 @@ function createCard({ title, stars, reviews, imgUrl }) {
 
 async function getProducts(search) {
   try {
-    const host = `https://clever-duck-overshirt.cyclic.app/`;
+    const host = `http://localhost:3000`;
     const url = `/api/scrape?keyword=${search}`;
     const apiUrl = host + url;
 

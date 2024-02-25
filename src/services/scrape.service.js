@@ -15,7 +15,9 @@ export async function amazonScrapeProductsService({ keyword }) {
     );
   }
 
-  const searchUrl = `https://www.amazon.com/s?k=${encodeURIComponent(keyword)}`;
+  const searchUrl = `https://www.amazon.com.br/s?k=${encodeURIComponent(
+    keyword
+  )}`;
 
   try {
     const response = await axios.get(searchUrl);
@@ -40,9 +42,7 @@ export async function amazonScrapeProductsService({ keyword }) {
       const stars = starsSpan.text();
 
       const reviewsSpan = $(element).find(
-        $(
-          'div[data-csa-c-content-id="alf-customer-ratings-count-component"] span a span'
-        )
+        $('div[data-cy="title-recipe"]').next().find("span").next().find("span")
       );
       const reviews = reviewsSpan.text();
 
