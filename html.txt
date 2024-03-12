@@ -7672,7 +7672,7 @@ $Nav.when('$', 'data', 'flyout.yourAccount', 'sidepanel.csYourAccount',
 });
 </script>
 <!-- sp:end-feature:customer-behavior-js -->
-<!-- sp:feature:csm:body-close -->
+<!-- sp:feature:csm:body-closeee -->
 <div id='be' style="display:none;visibility:hidden;"><form name='ue_backdetect' action="get"><input type="hidden" name='ue_back' value='1' /></form>
 
 
