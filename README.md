@@ -9,6 +9,7 @@ ExpressJS application that scrape the amazon products page and show the results 
 3. Navigate to the project directory in your terminal.
 4. Run `npm install` to install the dependencies.
 
+
 ## Running Locally
 
 1. Run `npm start` to start the server on port 3000
